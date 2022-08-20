@@ -1,6 +1,3 @@
-from abc import ABC
-
-from car import Car
 from .engine_interface import Engine
 
 class CapuletEngine(Engine):
