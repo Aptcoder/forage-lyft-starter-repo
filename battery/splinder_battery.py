@@ -7,5 +7,5 @@ class SplinderBattery(Battery):
         self.last_service_date = last_service_date
 
     def needs_service(self):
-        two_years_ago = datetime.today() - timedelta(days=730)
-        return self.last_service_date < two_years_ago
+        three_years_ago = datetime.today() - timedelta(days=1095)
+        return self.last_service_date < three_years_ago
